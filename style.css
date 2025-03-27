@@ -1,7 +1,139 @@
-#menu
-{
+#menu {
 	position: fixed;
 	width: 100%;
-	height: 35px;
-	background: white;
+	background: rgb(99, 137, 187);
+	list-style-type: none;
 }
+
+#menu a {
+	color: white;
+	text-decoration: none;
+	padding: 15px;
+	margin: 10px;
+	display: block;
+	text-align: center;
+}
+
+#menu a:hover {
+	background: rgb(38, 68, 107);
+	border-radius: 10px;
+}
+
+#menu li {
+	float: left;
+}
+
+section {
+	text-align: center;
+	background: rgb(237, 237, 255);
+}
+
+h1 {
+	font-size: 36px;
+	text-align: center;
+	position: relative;
+	margin: 20px 0;
+	padding: 10px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	color: rgb(39, 55, 75);
+}
+
+h1::before,
+h1::after {
+	content: "";
+	flex-grow: 3;
+	height: 3px;
+	background-color: rgb(99, 137, 187);
+}
+
+h1::before {
+	margin-right: 10px;
+}
+
+h1::after {
+	margin-left: 10px;
+}
+
+#photos {
+	text-align: center;
+}
+
+.photo-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(700px, 1fr));
+	gap: 20px;
+	padding: 10px;
+}
+
+.photo-container img {
+	width: 100%;
+	max-width: 850px;
+	height: 430px;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+.photo-container_qr {
+	grid-template-columns: repeat(auto-fill, minmax(700px, 1fr));
+	gap: 20px;
+	padding: 10px;
+}
+
+.photo-container_qr img {
+	width: 20%;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+.facebook-like {
+	width: 100%;
+	max-width: 450px;
+	height: 30px;
+	border-radius: 10px;
+	background-color: white;
+	margin: 20px;
+	padding: 10px;
+	padding-top: 20px;
+}
+  
+#contact form {
+	background-color: rgb(99, 137, 187);
+	padding: 20px 50px;
+	border-radius: 10px;
+	max-width: 600px;
+	margin: 20px auto;
+  }
+  
+  label {
+	font-weight: bold;
+	display: block;
+	margin-bottom: 10px;
+  }
+  
+  input[type="email"], textarea {
+	width: 100%;
+	padding: 12px;
+	border: 8px white; 
+	border-radius: 8px;
+	font-size: 16px;
+	margin-bottom: 20px;
+  }
+  
+  button {
+	background-color: rgb(38, 68, 107);
+	color: white;
+	padding: 10px 30px;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	font-size: 16px;
+	transition: background-color 0.4s;
+  }
+  
+  button:hover {
+	background-color: rgb(65, 38, 107); /* צבע רקע כשהכפתור ממור על */
+  }
+  
