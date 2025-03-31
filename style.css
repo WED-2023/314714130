@@ -137,3 +137,24 @@ h1::after {
 	background-color: rgb(65, 38, 107); /* צבע רקע כשהכפתור ממור על */
   }
   
+  dl {
+    width: 100%;
+    background-color: rgb(231, 231, 255);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+dt {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #222;
+    margin-top: 15px;
+}
+
+dd {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 10px;
+    padding-right: 15px;
+}
